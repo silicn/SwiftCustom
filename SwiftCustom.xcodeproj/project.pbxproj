@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		97109A751BF078F1007D9D5B /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97109A741BF078F1007D9D5B /* ColorView.swift */; };
 		97109A771BF07918007D9D5B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97109A761BF07918007D9D5B /* FirstViewController.swift */; };
+		971712441BFACEAD00F7F6FA /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971712431BFACEAD00F7F6FA /* MyCell.swift */; };
 		97EEE3CB1B78B6A4005AB843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EEE3CA1B78B6A4005AB843 /* AppDelegate.swift */; };
 		97EEE3CD1B78B6A4005AB843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EEE3CC1B78B6A4005AB843 /* ViewController.swift */; };
 		97EEE3D01B78B6A4005AB843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EEE3CE1B78B6A4005AB843 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		97109A741BF078F1007D9D5B /* ColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		97109A761BF07918007D9D5B /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		971712431BFACEAD00F7F6FA /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		97EEE3C51B78B6A4005AB843 /* SwiftCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EEE3C91B78B6A4005AB843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97EEE3CA1B78B6A4005AB843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				97EEE3CA1B78B6A4005AB843 /* AppDelegate.swift */,
 				97EEE3CC1B78B6A4005AB843 /* ViewController.swift */,
+				971712431BFACEAD00F7F6FA /* MyCell.swift */,
 				97EEE3CE1B78B6A4005AB843 /* Main.storyboard */,
 				97EEE3D11B78B6A4005AB843 /* Images.xcassets */,
 				97EEE3D31B78B6A4005AB843 /* LaunchScreen.xib */,
@@ -168,9 +171,11 @@
 				TargetAttributes = {
 					97EEE3C41B78B6A4005AB843 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					97EEE3D91B78B6A4005AB843 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 						TestTargetID = 97EEE3C41B78B6A4005AB843;
 					};
 				};
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97109A751BF078F1007D9D5B /* ColorView.swift in Sources */,
+				971712441BFACEAD00F7F6FA /* MyCell.swift in Sources */,
 				97EEE3CD1B78B6A4005AB843 /* ViewController.swift in Sources */,
 				97EEE3CB1B78B6A4005AB843 /* AppDelegate.swift in Sources */,
 				97109A771BF07918007D9D5B /* FirstViewController.swift in Sources */,
@@ -352,6 +358,7 @@
 				INFOPLIST_FILE = SwiftCustom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -362,6 +369,7 @@
 				INFOPLIST_FILE = SwiftCustom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -380,6 +388,7 @@
 				INFOPLIST_FILE = SwiftCustomTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCustom.app/SwiftCustom";
 			};
 			name = Debug;
@@ -395,6 +404,7 @@
 				INFOPLIST_FILE = SwiftCustomTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCustom.app/SwiftCustom";
 			};
 			name = Release;

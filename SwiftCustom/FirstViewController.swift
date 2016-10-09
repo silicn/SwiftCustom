@@ -71,6 +71,7 @@ class FirstViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.backgroundColor = UIColor.white
          self.color = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0) 
         
         
@@ -84,37 +85,107 @@ class FirstViewController: UIViewController{
             }
         }
         
-    
-        let httpError =  (404,"not found")
+//    
+//        let httpError =  (404,"not found")
+//        
+//        let (statueCode,Des) = httpError;
+//        
+//        print(Des,statueCode)
+//        var simpleeDes:String  = "A very simple class"
+//        
+//        func adjust(){
+//            simpleeDes += "Now is last"
+//        }
+//        
+//        var shape = Shape()
+//        shape.numofsides = 6;
+//        
+//        print(shape.simpledescription())
         
-        let (statueCode,Des) = httpError;
+//        let test = Squre(name: "sure", sideLenth: 6)
         
-        print(Des,statueCode)
-        var simpleeDes:String  = "A very simple class"
+//      print(test.area()) 
+//        
+//      print(test.simpleDes())   
+//        
+//        for  i in 1...10{
+//            print(i)
+  //      }
         
-        func adjust(){
-            simpleeDes += "Now is last"
-        }
+    //  print(sayHello("shiguanghui"))  
         
-        var shape = Shape()
-        shape.numofsides = 6;
+        print(openRang(begin: 1, end: 10))
         
-        print(shape.simpledescription())
         
-        let test = Squre(name: "sure", sideLenth: 6)
+        print(conut(param: "你咋那里的的的的").length)
         
-      print(test.area()) 
+        someFoo(exterParam: 2)
         
-      print(test.simpleDes())   
+        someFool(localParam: 2)
         
-        for  i in 1...10{
-            print(i)
-        }
+        someFoolls(locparam: "nimei")
+        
+        
+        print(join(string: "shiguanghui", toString: "shanshan",withJoiner:"-"))
+        
+        
+        print(arctNum(numbers: 1,2,3,4))
+        
+        
         
         // Do any additional setup after loading the view.
     }
     
+    
+    func arctNum(numbers:Double...)->Double
+    {
+        var total:Double = 0
+        
+        for number in numbers
+        {
+            total += number
+        }
+        
+        return total
+        
+    }
+    
+    
+    func join(string s1: String, toString s2: String, withJoiner joiner: String = " ") -> String {
+            return s1 + joiner + s2
+    }
+    
+    func someFoo(exterParam localParam:Int){
+         print(localParam)
+    }
+    
+    func someFool(localParam:Int){
+        print(localParam)
+    }
+    
+    
+    func someFoolls(locparam:String)
+    {
+        print(locparam)
+    }
+    
+    func conut(param:String)->(length:Int,sub:String)
+    {
+        return (8,(param as NSString).substring(to: 3))
+    }
+    
+    func openRang(begin:Int,end:Int) ->Int
+    {
+        print("openRang")
+        return end - begin;
+    }
+    
   
+    func sayHello(persionname:String)->String
+    {
+        return persionname + "  hello !"
+    }
+    
    
 
     override func didReceiveMemoryWarning() {
